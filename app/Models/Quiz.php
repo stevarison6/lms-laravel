@@ -6,6 +6,7 @@ use App\Models\Course;
 use App\Models\Question;
 use App\Models\QuizResult;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Quiz extends Model
 {

@@ -2,9 +2,10 @@
 
 namespace App\Http\Middleware;
 
-use Illuminate\Http\Request;
+use App\Models\Setting;
 use Inertia\Middleware;
 use Tighten\Ziggy\Ziggy;
+use Illuminate\Http\Request;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -36,6 +37,7 @@ class HandleInertiaRequests extends Middleware
                 ...(new Ziggy)->toArray(),
                 'location' => $request->url(),
             ],
+            'settings' => Setting::first(),
         ];
     }
 }

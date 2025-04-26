@@ -8,6 +8,8 @@ use App\Models\Lesson;
 use App\Models\Enrollment;
 use App\Models\Certificate;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class Course extends Model
 {
@@ -25,9 +27,10 @@ class Course extends Model
         return $this->hasMany(Lesson::class);
     }
 
-    public function enrollments()
+    public function students()
     {
-        return $this->hasMany(Enrollment::class);
+        return $this->belongsToMany(User::class, 'enrollments')
+                    ->withTimestamps();  // Si on veux les dates d'inscription
     }
 
     public function quizzes()

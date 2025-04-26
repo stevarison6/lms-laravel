@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Progress extends Model
 {
     use HasFactory;
+    protected $table = 'progresses';
 
     protected $fillable = ['user_id', 'lesson_id', 'completed', 'completed_at'];
 

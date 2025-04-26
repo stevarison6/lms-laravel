@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description');
-            $table->string('photo_path_course', 2048)->nullable();
-            $table->foreignId('instructor_id')->constrained('users')->onDelete('cascade');
+            $table->string('site_name')->default('Mon LMS');
+            $table->string('site_description')->nullable();
+            $table->string('logo_path')->nullable();
+            $table->integer('items_per_page')->default(10);
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('settings');
     }
 };
