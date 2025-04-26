@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { router } from '@inertiajs/vue3';
-import AppLayout from '@/Layouts/AppLayout.vue';
+import DashboardLayout from '@/Layouts/DashboardLayout.vue';
 import { debounce } from 'lodash';
 import {Link } from '@inertiajs/vue3';
 
@@ -18,7 +18,7 @@ watch(search, debounce((value) => {
 </script>
 
 <template>
-  <AppLayout>
+  <DashboardLayout>
     <template #content>
       <div class="bg-white rounded-2xl shadow p-6 text-center mb-6">
         <h1 class="text-3xl font-bold text-gray-800 mb-2">Tous les Cours</h1>
@@ -88,5 +88,5 @@ watch(search, debounce((value) => {
         </button>
       </div>
     </template>
-  </AppLayout>
+  </DashboardLayout>
 </template>
