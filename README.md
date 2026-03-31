@@ -37,7 +37,7 @@ Welcome to **Mon LMS**, a web application for managing online courses and lesson
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+  
  git clone https://github.com/stevarison6/lms-laravel.git
 
 2.Navigate to the project folder:
@@ -62,23 +62,7 @@ php artisan migrate --seed
 
 9.Start the development server:
 php artisan serve
-10.Overview
-https://github.com/stevarison6/lms-laravel/blob/main/screenshot/overwiew-1.PNG
-![Overview 2](screenshot/overwiew-2.PNG)
-![Overview 3](screenshot/overwiew-3.PNG)
-![Overview 4](screenshot/overwiew-4.PNG)
-![Overview 5](screenshot/overwiew-5.PNG)
-![Overview 6](screenshot/overwiew-6.PNG)
-![Overview 7](screenshot/overwiew-7.PNG)
-10.Overview
-https://github.com/stevarison6/lms-laravel/blob/main/screenshot/overwiew-1.PNG
-![Overview 2](screenshot/overwiew-2.PNG)
-![Overview 3](screenshot/overwiew-3.PNG)
-![Overview 4](screenshot/overwiew-4.PNG)
-![Overview 5](screenshot/overwiew-5.PNG)
-![Overview 6](screenshot/overwiew-6.PNG)
-![Overview 7](screenshot/overwiew-7.PNG)
-screenshot/overwiew-1.PNG
+
 
 🎯 Important Notes
 Access to special admin pages is protected by an "admin" middleware.
