@@ -62,6 +62,14 @@ php artisan migrate --seed
 
 9.Start the development server:
 php artisan serve
+10.Overview
+https://github.com/stevarison6/lms-laravel/blob/main/screenshot/overwiew-1.PNG
+![Overview 2](screenshot/overwiew-2.PNG)
+![Overview 3](screenshot/overwiew-3.PNG)
+![Overview 4](screenshot/overwiew-4.PNG)
+![Overview 5](screenshot/overwiew-5.PNG)
+![Overview 6](screenshot/overwiew-6.PNG)
+![Overview 7](screenshot/overwiew-7.PNG)
 
 🎯 Important Notes
 Access to special admin pages is protected by an "admin" middleware.
